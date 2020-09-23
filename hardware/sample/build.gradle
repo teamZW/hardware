@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion this.rootProject.android.compileSdkVersion
+    buildToolsVersion this.rootProject.android.buildToolsVersion
+    defaultConfig {
+        applicationId this.rootProject.android.applicationId
+        minSdkVersion this.rootProject.android.minSdkVersion
+        targetSdkVersion this.rootProject.android.targetSdkVersion
+        versionCode this.rootProject.android.versionCode
+        versionName this.rootProject.android.versionName
+        multiDexEnabled this.rootProject.android.multiDexEnabled
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled this.rootProject.android.minifyEnabled
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation this.rootProject.depsLibs.appcompat
+    testImplementation this.rootProject.depsLibs.junit
+
+    //circleTick
+    //implementation project(':librarycircletick')
+    implementation 'com.github.teamZW.customWidget:librarycircletick:1.0.5'
+
+    //circlePan
+    //implementation project(':librarycirclepan')
+    implementation 'com.github.teamZW.customWidget:librarycirclepan:1.0.5'
+
+    //calendar
+    //implementation project(':librarycalendar')
+    implementation 'com.github.teamZW.customWidget:librarycalendar:1.0.6'
+
+    //implementation project(':library_move_draw')
+    //implementation project(':library_light_view')
+    implementation 'com.github.teamZW.customWidget:library_move_draw:1.0.7'
+    implementation 'com.github.teamZW.customWidget:library_light_view:1.0.7'
+
+    //animation
+    //implementation project(':library_animation')
+    implementation 'com.github.teamZW.customWidget:library_animation:1.0.9'
+
+    //implementation project(':library_timebar')
+    implementation 'com.github.teamZW.customWidget:library_timebar:1.1.0'
+
+    //lock
+    //implementation project(':library_lock')
+    implementation 'com.github.teamZW.customWidget:library_lock:1.1.0'
+}

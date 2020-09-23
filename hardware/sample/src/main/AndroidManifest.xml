@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hardware.sample">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.hardware.sample.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.hardware.sample.widget.CircleTickActivity"/>
+        <activity android:name="com.hardware.sample.widget.CirclePanActivity"/>
+        <activity android:name="com.hardware.sample.widget.CalendarActivity"/>
+        <activity android:name="com.hardware.sample.widget.MoveDarwActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hardware.sample.widget.LightActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hardware.sample.widget.TimeBarActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.hardware.sample.animation.ScanAnimationActivity"/>
+        <activity android:name="com.hardware.sample.animation.LoadingAnimationActivity"/>
+        <activity android:name="com.hardware.sample.animation.FallingBallAnimationActivity"/>
+        <activity android:name="com.hardware.sample.animation.MenuAnimationActivity"/>
+        <activity android:name="com.hardware.sample.animation.TanAnimationActivity"/>
+        <activity android:name="com.hardware.sample.widget.CircleLockActivity"/>
+    </application>
+
+</manifest>
