@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hardware.sample">
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,21 +23,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.hardware.sample.widget.CircleTickActivity"/>
-        <activity android:name="com.hardware.sample.widget.CirclePanActivity"/>
-        <activity android:name="com.hardware.sample.widget.CalendarActivity"/>
-        <activity android:name="com.hardware.sample.widget.MoveDarwActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.hardware.sample.widget.LightActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.hardware.sample.widget.TimeBarActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name="com.hardware.sample.animation.ScanAnimationActivity"/>
-        <activity android:name="com.hardware.sample.animation.LoadingAnimationActivity"/>
-        <activity android:name="com.hardware.sample.animation.FallingBallAnimationActivity"/>
-        <activity android:name="com.hardware.sample.animation.MenuAnimationActivity"/>
-        <activity android:name="com.hardware.sample.animation.TanAnimationActivity"/>
-        <activity android:name="com.hardware.sample.widget.CircleLockActivity"/>
+        <activity android:name="com.hardware.sample.func.WifiActivity"/>
     </application>
 
 </manifest>

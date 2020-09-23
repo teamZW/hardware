@@ -25,31 +25,6 @@ dependencies {
     implementation this.rootProject.depsLibs.appcompat
     testImplementation this.rootProject.depsLibs.junit
 
-    //circleTick
-    //implementation project(':librarycircletick')
-    implementation 'com.github.teamZW.customWidget:librarycircletick:1.0.5'
-
-    //circlePan
-    //implementation project(':librarycirclepan')
-    implementation 'com.github.teamZW.customWidget:librarycirclepan:1.0.5'
-
-    //calendar
-    //implementation project(':librarycalendar')
-    implementation 'com.github.teamZW.customWidget:librarycalendar:1.0.6'
-
-    //implementation project(':library_move_draw')
-    //implementation project(':library_light_view')
-    implementation 'com.github.teamZW.customWidget:library_move_draw:1.0.7'
-    implementation 'com.github.teamZW.customWidget:library_light_view:1.0.7'
-
-    //animation
-    //implementation project(':library_animation')
-    implementation 'com.github.teamZW.customWidget:library_animation:1.0.9'
-
-    //implementation project(':library_timebar')
-    implementation 'com.github.teamZW.customWidget:library_timebar:1.1.0'
-
-    //lock
-    //implementation project(':library_lock')
-    implementation 'com.github.teamZW.customWidget:library_lock:1.1.0'
+    //wifi
+    implementation project(':lib_wifi')
 }
