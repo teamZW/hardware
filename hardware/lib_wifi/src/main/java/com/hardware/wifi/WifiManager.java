@@ -149,7 +149,7 @@ public class WifiManager {
             public void run() {
                 super.run();
                 String ssidType = connectAp.getCipherType(mContext, ssid);
-                Log.v("wifi[","search ssid="+ssid+", pwd="+pwd+", ssidType="+ssidType);
+                //Log.v("wifi[","search ssid="+ssid+", pwd="+pwd+", ssidType="+ssidType);
                 if(ssid.startsWith("IPC-") || ssid.startsWith("MC-")){
                     mWifiUtils.quickConnWifi(mContext, ssid, null, WifiUtils.NOPWD);
                 }else{
@@ -297,7 +297,7 @@ public class WifiManager {
             wifiAdmin.scanWifiList();
             List<ScanResult> tmp = wifiAdmin.getWifiList();
             int size = tmp.size();
-            Log.v("wifi[","search size="+size);
+            //Log.v("wifi[","search size="+size);
             clearApMap();
             for (int i = 0; i < size; i++) {
                 //if(checkAp(tmp.get(i).SSID)){
@@ -309,6 +309,7 @@ public class WifiManager {
             }
         }catch (SecurityException e){
             e.printStackTrace();
+            //Log.v("wifi[","search e="+e);
             if(wifiUpdate!=null){
                 wifiUpdate.updateError(WifiCode.ErrorStatus.permission_error);
             }
@@ -461,7 +462,7 @@ public class WifiManager {
         WifiInfo wifiInfo = wifiMan.getConnectionInfo();
         String currentSSID = wifiInfo.getSSID().toString().replace("\"","");
         //currentSSID = "<unknown ssid>";
-        Log.v("wifi[","currentSSID="+currentSSID);
+        //Log.v("wifi[","currentSSID="+currentSSID);
         if( currentSSID!=null &&
                 !currentSSID.isEmpty() &&
                 !currentSSID.equals("<unknown ssid>") ){

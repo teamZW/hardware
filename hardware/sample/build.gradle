@@ -26,5 +26,6 @@ dependencies {
     testImplementation this.rootProject.depsLibs.junit
 
     //wifi
-    implementation project(':lib_wifi')
+    //implementation project(':lib_wifi')
+    implementation 'com.github.teamZW:hardware:1.0.0'
 }
