@@ -1,0 +1,16 @@
+# hardware
+/hardware/.gradle/
+/hardware/.idea/
+/hardware/.svn/
+/hardware/java_pid5600.hprof   
+/hardware/local.properties
+/hardware/*.iml
+
+#sample
+/hardware/sample/build/
+/hardware/sample/*.iml
+
+#lib_wifi
+/hardware/lib_wifi/build/
+/hardware/lib_wifi/*.iml
+
